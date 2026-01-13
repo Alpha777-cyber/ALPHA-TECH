@@ -31,4 +31,16 @@ const setMenu = document.getElementById('set-menu')
 
 pfp.onclick = () => setMenu.classList.toggle('hidden')
 
+const params = new URLSearchParams(window.location.search)
+const firstName = params.get('firstname') || localStorage.getItem('userFirstName') || ''
+const lastName = params.get('lastname') || localStorage.getItem('userLastName') || ''
+const displayName = [firstName, lastName].filter(Boolean).join(' ') || 'MUNEZERO Alpha'
 
+if (params.get('firstname') || params.get('lastname')) {
+    localStorage.setItem('userFirstName', firstName)
+    localStorage.setItem('userLastName', lastName)
+}
+
+document.querySelectorAll('[data-user-name]').forEach((el) => {
+    el.textContent = displayName
+})

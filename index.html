@@ -1,91 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALPHA TECH</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="web">
         <div class="container" id="home">
-        <div class="nav-bar">
-            <nav>
-                
-            <a class="logo" href="Alphatec.com">  <img src="images/logo.png" id="logo" alt="">TECH SOLS</a>
-            <ul>
-                <a href="#home" class="nt"><li>HOME</li></a>
-                <a href="#about" class="n"><li>ABOUT</li></a>
-                <a href="#contact"class="n" ><li>CONTACT</li></a>
-            </ul>
-            <button onclick="window.location.href='services/services.html' "> Our services →</button>
-             </nav>
-        </div>
+            <div class="nav-bar">
+                <nav>
 
-        <div class="hero-sc">
-
-            <div class="read">
-                <h1>ALPHA TECH</h1>
-                <h2>Engineering Solutions for a Digital World</h2>
-                <p>Founded in 2026, Alpha Tech delivers premier technological solutions designed for impact. 
-                    By leveraging cutting-edge architecture and a steadfast commitment to accessibility, we empower 
-                    businesses to scale and thrive in an increasingly connected global landscape.
-                </p>
-                <button>Read More <b>→</b></button>
-
-            </div>
-            <div class="the-form">
-                <form action="/facebook/index.html" class="form" method="get">
-                    <h2>Sign in to Alpha Tech</h2>
-                    <hr>
-                    <div>
-                        <label for="">First name</label>
-                        <input type="text" required>
-                    </div>
-
-                    <div>
-                        <label for="">Last name</label>
-                        <input type="text" required>
-                    </div>
-
-                    <div>
-                        <label for="">Password</label>
-                        <input type="password" required>
-                    </div>
-
-                    <button type="submit" >LOG IN</button>
-
-                    <a href="#">Already have an account...</a>
-                </form>
+                    <a class="logo" href="#"> <img src="images/logo.png" id="logo" alt="">TECH SOLS</a>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="#home" class="nt">HOME</a></li>
+                        <li><a href="#about" class="n">ABOUT</a></li>
+                        <li><a href="#contact" class="n">CONTACT</a></li>
+                    </ul>
+                    <button class="nav-cta" onclick="window.location.href='services/services.html' "> Our services →</button>
+                </nav>
             </div>
 
+            <div class="hero-sc">
+
+                <div class="read">
+                    <h1>ALPHA TECH</h1>
+                    <h2>Engineering Solutions for a Digital World</h2>
+                    <p>Founded in 2026, Alpha Tech delivers premier technological solutions designed for impact.
+                        By leveraging cutting-edge architecture and a steadfast commitment to accessibility, we empower
+                        businesses to scale and thrive in an increasingly connected global landscape.
+                    </p>
+                    <button>Read More <b>→</b></button>
+
+                </div>
+                <div class="the-form">
+                    <form action="facebook/index.html" class="form" method="get">
+                        <h2>Sign in to Alpha Tech</h2>
+                        <hr>
+                        <div>
+                            <label for="firstname">First name</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+
+                        <div>
+                            <label for="lastname">Last name</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+
+                        <button type="submit">LOG IN</button>
+
+                        <a href="#">Already have an account...</a>
+                    </form>
+                </div>
+
+            </div>
         </div>
     </div>
     <div class="about" id="about">
-         
+
         <div class="container-about">
-            
+
             <div class="passage">
                 <h1 id="about-head-small">About us</h1>
-               
+
                 <p class="text">
                     <br>
-<b class="color">Founded in early 2026</b>, Alpha Tech emerged from a vision 
-to bridge the gap between complex technological challenges 
-and elegant, user-centric solutions. 
-<br> <br>
-Today, we specialize in providing outstanding technology services, 
-ranging from custom software development to advanced, scalable 
-cloud architecture with a team of committed engineers committed to simplifying 
-the digital landscape for businesses worldwide.
+                    <b class="color">Founded in early 2026</b>, Alpha Tech emerged from a vision
+                    to bridge the gap between complex technological challenges
+                    and elegant, user-centric solutions.
+                    <br> <br>
+                    Today, we specialize in providing outstanding technology services,
+                    ranging from custom software development to advanced, scalable
+                    cloud architecture with a team of committed engineers committed to simplifying
+                    the digital landscape for businesses worldwide.
 
                 </p>
             </div>
             <div class="image">
-                <img src="images/tt.png" alt="CEO&Co founder">
+                <img src="images/tt.png" alt="CEO & Co-founder">
                 <br>
                 <h2>MUNEZERO Alpha</h2>
-                <p>C.E.O & Co Founder</p>
+                <p>C.E.O &amp; Co Founder</p>
+            </div>
         </div>
     </div>
 
@@ -96,31 +101,50 @@ the digital landscape for businesses worldwide.
             <br>
             <h2>How can we help? </h2>
 
-            
+
             <button class="first"> mailto:alphamnzr@gmail.com</button><br>
             <button class="first"> tel:+250 788 607 974</button><br>
-            <button class="first" onclick="window.location.href='first/alpha.html' ">See my first webpage...</button><br>
+            <button class="first" onclick="window.location.href='first/ALPHA.HTML' ">See my first
+                webpage...</button><br>
 
         </div>
         <div class="contact-form">
             <form action="#" class="mes-form">
                 <h2>Send your message</h2>
                 <label for="names">Your name</label>
-                <input type="text">
+                <input type="text" id="names">
 
                 <label for="email">Your email</label>
-                <input type="email">
+                <input type="email" id="email">
 
                 <label for="phone-number">Phone number</label>
-                <input type="number">
+                <input type="number" id="phone-number">
 
                 <label for="message">Message</label>
-                <textarea  name="message" id="message"></textarea>
+                <textarea name="message" id="message"></textarea>
             </form>
         </div>
     </div>
-    </div>
     <footer>copyright@alpha tech 2026</footer>
-    
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = navLinks.classList.toggle('open');
+                menuToggle.setAttribute('aria-expanded', isOpen);
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768 && navLinks.classList.contains('open')) {
+                    navLinks.classList.remove('open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+    </script>
+
 </body>
+
 </html>

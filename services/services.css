@@ -126,3 +126,96 @@ nav {
     line-height: 1.6;
     font-size: 15px;
 }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    nav {
+        padding: 20px 40px;
+    }
+    
+    .services-grid {
+        padding: 50px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        align-items: flex-start;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    .get-started {
+        align-self: flex-end;
+    }
+    
+    .services-hero {
+        padding: 80px 20px 40px;
+    }
+    
+    .gradient-text {
+        font-size: 40px;
+    }
+    
+    .subtitle {
+        font-size: 16px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+    
+    .service-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 15px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .get-started {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .services-hero {
+        padding: 60px 15px 30px;
+    }
+    
+    .gradient-text {
+        font-size: 30px;
+    }
+    
+    .subtitle {
+        font-size: 14px;
+    }
+    
+    .services-grid {
+        padding: 20px 15px;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+    
+    .service-card h3 {
+        font-size: 18px;
+    }
+    
+    .service-card p {
+        font-size: 14px;
+    }
+}

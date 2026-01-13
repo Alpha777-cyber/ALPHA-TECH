@@ -1,19 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>MUSIC</title>
-        <link rel="icon" type="image/jpn" href="10487501.jpn">
+        <link rel="icon" type="image/png" href="10487501.jpn">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body{
                 background-image:url("12.jpg");
                 background-repeat: no-repeat;
                 background-size:cover;
                 background-attachment: scroll;
+                margin: 0;
+                padding: 20px;
+                box-sizing: border-box;
             }
-              audio::-webkit-media-controls-play-button,
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            audio {
+                width: 100%;
+                max-width: 500px;
+            }
+            
+            pre {
+                overflow-x: auto;
+                word-wrap: break-word;
+                white-space: pre-wrap;
+            }
+            
+            audio::-webkit-media-controls-play-button,
             audio::-webkit-media-controls-panel {
             background-color:purple;
             color: white;
+            }
+            
+            @media (max-width: 768px) {
+                body {
+                    padding: 15px;
+                }
+                
+                h2, h3 {
+                    font-size: 1.5em;
+                }
+                
+                p {
+                    font-size: 16px;
+                }
+                
+                pre {
+                    font-size: 14px;
+                }
+                
+                button {
+                    width: 100%;
+                    max-width: 300px;
+                    padding: 10px;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                body {
+                    padding: 10px;
+                }
+                
+                h2, h3 {
+                    font-size: 1.2em;
+                }
+                
+                p {
+                    font-size: 14px;
+                }
+                
+                pre {
+                    font-size: 12px;
+                }
+                
+                button {
+                    font-size: 14px;
+                    padding: 8px;
+                }
+                
+                address {
+                    font-size: 12px;
+                }
+            }
         </style>
     </head>
     <body>
@@ -26,7 +103,7 @@
     <i>Listening to music provides significant cognitive and emotional benefits by stimulating the brain,<br> which can lower stress, improve mood, and enhance memory. It serves as a powerful tool for emotional expression and can foster social connection and identity formation. </i><br>
     </p>
      <hr><br><h2>ARTIST OF THE DAY:DRAKE</h2>
-     <img src="DRAKE.png">
+     <img src="DRAKE.png" alt="Drake">
      <h2>LYRICS</h2>
      <h3 align="center">GOD'PLAN-DRAKE</h3>
      <p title="scroll me up" style="background-color: aqua;">
@@ -75,7 +152,7 @@
             <source src="Drake - God's Plan (Audio) (1).mp3" type="audio/mpeg"> 
             Your browser does not support the audio element.
         </audio><br>
-        <a style="background-color: #333;" TARGET="BLANK" href="https://www.youtube.com/watch?v=xpVfcZ0ZcFM"
+        <a style="background-color: #333;" target="_blank" href="https://www.youtube.com/watch?v=xpVfcZ0ZcFM"
         title="Gods'plan song">watch the song(GOD'PLAN-DRAKE)
         </a><hr>
        
