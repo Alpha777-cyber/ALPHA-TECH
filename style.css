@@ -1,0 +1,438 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6; 
+  color: #e0e0e0;
+}
+
+p {
+  font-size: 1.1rem;
+  max-width: 600px; 
+}
+
+.container {
+    width: 100%;
+    background-image: url(images/r.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 0px;
+    padding: 0px;
+
+}
+
+nav {
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 400px;
+    padding: 22px;
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0px;
+    z-index: 2;
+    border: 1px solid  rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+
+#logo{
+    width: 37px;
+    height: 35px;
+    border-radius: 50px;
+    border: 0.5px solid rgba(0, 255, 255, 0.147);
+    margin-top: px;
+}
+
+.logo {
+    color: rgb(226, 226, 250);
+    font-size: 1.4rem;
+    font-weight: bolder;
+    font-family:'Orbitron''Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-bar li {
+    color: rgb(197, 194, 194);
+}
+
+.nav-bar li:hover {
+    color: rgb(125, 125, 241);
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+.nav-bar button{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color:rgba(76, 76, 76, 0.1);
+    border : none;
+    border-radius: 20px;
+    font-size: larger;
+    font-weight: bolder;
+    font-weight: 2000;
+    backdrop-filter: blur(10px);
+}
+
+.nav-bar button:hover{
+    color:rgba(9, 9, 9, 0.8);
+    background-color:rgba(91, 91, 91, 0.503);
+    transform: scale(1.02);
+}
+.n{
+    border-bottom: 3px solid rgba(0, 255, 255, 0);
+}
+
+.n:active{
+    border:3px solid cyan;
+}
+
+a {
+    text-decoration: none;
+}
+
+.read {
+    padding-top: 100px;
+    padding-left: 160px;
+    width: 50%;
+}
+
+.read h1 {
+    font-family: 'Orbitron' 'sans-serif';
+    background: linear-gradient(90deg,
+            rgb(1, 158, 158) 0%,
+            rgb(68, 68, 249) 50%,
+            rgb(55, 5, 182) 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 5.5rem;
+    transition: transform 0.3s ease;
+}
+
+.read h1:hover {
+    transform: rotate(1deg) scale(1.10);
+    text-shadow: 0 0 70px aqua,
+        0 0 80px darkblue;
+}
+
+
+.read p {
+    padding-top: 60px;
+    color: white;
+    font-size: 1.2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.read h2 {
+    margin-top: 20px;
+    color: rgb(195, 194, 194);
+    font-size: 1.5rem;
+}
+
+.read button {
+    color:whitesmoke;
+    background-color: transparent;
+    width: 160px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 30px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.read button:hover{
+    color:black;
+    background-color: white; 
+    transform: scale(1.1);
+}
+
+.hero-sc {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.the-form {
+    width: 27%;
+    margin-left: 100px;
+}
+
+.form {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 40px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0,255,255,0.3);
+    height: 380px;
+    padding: 2rem;
+    background:rgba(255,255,255,0.05);
+    box-shadow: 0 8px 32px  rgba(0,0,0,0.3);
+    border-radius: 15px;
+
+
+}
+
+.form h2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: rgb(222, 215, 206);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form label {
+    color: rgb(141, 220, 220);
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form input {
+    color: white;
+    width: 80%;
+    height: 20px;
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #444;
+    background-color: #2a2a3a;
+}
+
+.form input:focus{
+    outline: none;
+    scale: 1.05;
+    box-shadow: 0 0 10px darkgray;
+}
+
+.form button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 90%;
+    height: 35px;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(3, 3, 3, 0.479);
+    border-radius: 20px;
+    outline: none;
+}
+
+.form hr {
+    height: 2px;
+    color: black;
+}
+
+.form a {
+    padding-top: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(245, 243, 243);
+}
+
+.form a:hover {
+    padding-top: 10px;
+    color: rgb(121, 121, 122);
+}
+
+.about{
+    background: linear-gradient(160deg, #050414 0%,rgb(0, 0, 2) 50%, #0d0c21 100%);
+    width: 100%;
+    padding-top: 100px;
+}
+
+.container-about{
+    margin-left: 160px;
+    display: flex;
+
+}
+.passage{
+    width: 50%;
+}
+
+.image{
+    margin-top:10px ;
+    padding-left: 150px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+   gap: 0px;
+}
+
+.image img{
+    height: 470px;
+    width: 320px;
+    border-radius: 20%;
+    border: 1px solid aqua;
+}
+
+.text{
+    color: white;
+    font-size:1.4rem;
+    font-family: Tahoma, sans-serif;
+    max-width: 450px;
+}
+
+.image h2 {
+    margin-left: 65px;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+
+.image p{
+    margin-left: 100px;
+}
+
+.color{
+    color: rgb(164, 249, 249);
+}
+
+#about-head-small{
+    color:aqua;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact{
+    width:100%;
+    display: flex;
+}
+
+.get{
+    margin-top: 100px;
+    margin-left:160px;
+    width: 40%;
+}
+.get h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.get h1{
+    color: cyan;
+    margin-left: 20px;
+}
+
+.contact-form{
+    margin-top:140px ;
+    width: 60%;
+    margin-bottom: 100px;
+}
+
+.mes-form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid cyan;
+    padding: 20px;
+    width: 650px;
+    border-radius: 20px;
+     backdrop-filter: blur(10px);
+ background:rgb(11, 1, 26);
+
+}
+
+.mes-form input{
+    color: white;
+    width: 600px;
+    height: 30px;
+     padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #444;
+    background-color: #2a2a3a;
+    transition: all 0.3s ease;
+
+}
+.mes-form input:hover{
+    outline: none;
+    border: 1px solid #444;
+    background-color: #2a2a3a;
+    transform: scale(1.05);
+
+}
+.mes-form input:autofill{
+    outline: none;
+    border: 1px solid #444;
+    background-color: #2a2a3a;
+
+}
+
+
+.mes-form label{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mes-form textarea{
+    color: white;
+    resize:none;
+    height: 150px;
+    width:600px;
+     padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #444;
+    background-color: #2a2a3a;
+}
+
+.first{
+    color: #efeff4;
+    background-color: #2a2a3a;
+    height: 100px;
+    width: 500px;
+    border: 1px solid cyan;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+}
+.first:hover{
+    transform: scale(1.09);
+}
+
+footer{
+     backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    bottom: 0px;
+    height: 40px;
+    background-color: rgba(2, 0, 8, 0.96);
+    border-radius: 0px;
+    border-top: 0.01px solid  rgb(3, 194, 253);
+    width: 100%;
+    color: white;
+}
