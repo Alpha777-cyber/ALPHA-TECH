@@ -436,3 +436,230 @@ footer{
     width: 100%;
     color: white;
 }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    nav {
+        gap: 200px;
+        padding: 15px;
+    }
+    
+    .read {
+        padding-left: 80px;
+        width: 60%;
+    }
+    
+    .read h1 {
+        font-size: 4rem;
+    }
+    
+    .the-form {
+        width: 35%;
+        margin-left: 50px;
+    }
+    
+    .container-about {
+        margin-left: 80px;
+    }
+    
+    .image {
+        padding-left: 80px;
+    }
+    
+    .get {
+        margin-left: 80px;
+    }
+    
+    .mes-form {
+        width: 90%;
+    }
+    
+    .mes-form input {
+        width: 95%;
+    }
+    
+    .mes-form textarea {
+        width: 95%;
+    }
+    
+    .first {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+        padding: 15px;
+    }
+    
+    .nav-bar ul {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .nav-bar button {
+        width: 150px;
+        font-size: 14px;
+    }
+    
+    .hero-sc {
+        flex-direction: column;
+        margin-top: 120px;
+    }
+    
+    .read {
+        padding-left: 20px;
+        padding-top: 50px;
+        width: 100%;
+    }
+    
+    .read h1 {
+        font-size: 2.5rem;
+    }
+    
+    .read h2 {
+        font-size: 1.2rem;
+    }
+    
+    .read p {
+        font-size: 1rem;
+        padding-top: 30px;
+    }
+    
+    .read button {
+        margin-left: 20px;
+        width: 140px;
+    }
+    
+    .the-form {
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .form {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1.5rem;
+    }
+    
+    .container-about {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .passage {
+        width: 100%;
+    }
+    
+    .image {
+        width: 100%;
+        padding-left: 0;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .image img {
+        width: 280px;
+        height: 400px;
+    }
+    
+    .contact {
+        flex-direction: column;
+    }
+    
+    .get {
+        margin-left: 20px;
+        width: 90%;
+        margin-top: 50px;
+    }
+    
+    .contact-form {
+        width: 90%;
+        margin: 20px auto;
+        margin-bottom: 50px;
+    }
+    
+    .mes-form {
+        width: 100%;
+    }
+    
+    .mes-form input {
+        width: 95%;
+    }
+    
+    .mes-form textarea {
+        width: 95%;
+    }
+    
+    .first {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.1rem;
+    }
+    
+    #logo {
+        width: 30px;
+        height: 30px;
+    }
+    
+    nav {
+        padding: 10px;
+    }
+    
+    .nav-bar ul {
+        gap: 15px;
+    }
+    
+    .nav-bar button {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    .read h1 {
+        font-size: 2rem;
+    }
+    
+    .read h2 {
+        font-size: 1rem;
+    }
+    
+    .read p {
+        font-size: 0.9rem;
+    }
+    
+    .form {
+        padding: 1rem;
+    }
+    
+    .form h2 {
+        font-size: 1.2rem;
+    }
+    
+    .image img {
+        width: 200px;
+        height: 300px;
+    }
+    
+    .text {
+        font-size: 1.1rem;
+    }
+    
+    .get h1 {
+        font-size: 1.5rem;
+    }
+    
+    .get h2 {
+        font-size: 1.1rem;
+    }
+}

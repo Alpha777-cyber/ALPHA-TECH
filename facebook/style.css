@@ -515,3 +515,152 @@ nav{
     padding-left:23px ;
     background: #0a0a0a;
 }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .container {
+        gap: 30px;
+    }
+    
+    .left-sidebar, .right-sidebar {
+        flex-basis: 20%;
+    }
+    
+    .main-content {
+        flex-basis: 60%;
+    }
+    
+    .search-box {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 10px 3%;
+    }
+    
+    .logo {
+        width: 120px;
+        margin-right: 20px;
+    }
+    
+    .nav-left ul li img {
+        width: 22px;
+        margin: 0 10px;
+    }
+    
+    .search-box {
+        width: 200px;
+    }
+    
+    .nav-user-icon {
+        margin-left: 15px;
+    }
+    
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .left-sidebar, .right-sidebar {
+        flex-basis: 100%;
+        position: static;
+    }
+    
+    .main-content {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    
+    .story-gallery {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .story {
+        flex-basis: 25%;
+        min-width: 120px;
+        padding-top: 40%;
+    }
+    
+    .settings-menu {
+        width: 85%;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 8px 2%;
+    }
+    
+    .logo {
+        width: 100px;
+        margin-right: 10px;
+    }
+    
+    .nav-left ul {
+        display: none;
+    }
+    
+    .search-box {
+        width: 150px;
+        padding: 0 10px;
+    }
+    
+    .search-box input {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    .nav-user-icon img {
+        width: 35px;
+    }
+    
+    .container {
+        padding: 10px 2%;
+    }
+    
+    .story {
+        flex-basis: 30%;
+        min-width: 100px;
+    }
+    
+    .write-post-container, .post-container {
+        padding: 15px;
+    }
+    
+    .post-input-container {
+        padding-left: 45px;
+    }
+    
+    .add-post-links {
+        flex-wrap: wrap;
+    }
+    
+    .add-post-links a {
+        margin-right: 15px;
+        font-size: 13px;
+    }
+    
+    .settings-menu {
+        width: 90%;
+        max-width: 300px;
+        right: 5px;
+    }
+    
+    .right-sidebar {
+        padding: 15px;
+    }
+    
+    .event {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .left-event {
+        margin-bottom: 10px;
+    }
+}
