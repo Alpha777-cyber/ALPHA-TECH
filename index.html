@@ -15,12 +15,13 @@
                 <nav>
 
                     <a class="logo" href="#"> <img src="images/logo.png" id="logo" alt="">TECH SOLS</a>
-                    <ul>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+                    <ul class="nav-links" id="nav-links">
                         <li><a href="#home" class="nt">HOME</a></li>
                         <li><a href="#about" class="n">ABOUT</a></li>
                         <li><a href="#contact" class="n">CONTACT</a></li>
                     </ul>
-                    <button onclick="window.location.href='services/services.html' "> Our services →</button>
+                    <button class="nav-cta" onclick="window.location.href='services/services.html' "> Our services →</button>
                 </nav>
             </div>
 
@@ -37,22 +38,22 @@
 
                 </div>
                 <div class="the-form">
-                    <form action="/facebook/index.html" class="form" method="get">
+                    <form action="facebook/index.html" class="form" method="get">
                         <h2>Sign in to Alpha Tech</h2>
                         <hr>
                         <div>
                             <label for="firstname">First name</label>
-                            <input type="text" id="firstname" required>
+                            <input type="text" id="firstname" name="firstname" required>
                         </div>
 
                         <div>
                             <label for="lastname">Last name</label>
-                            <input type="text" id="lastname" required>
+                            <input type="text" id="lastname" name="lastname" required>
                         </div>
 
                         <div>
                             <label for="password">Password</label>
-                            <input type="password" id="password" required>
+                            <input type="password" id="password" name="password" required>
                         </div>
 
                         <button type="submit">LOG IN</button>
@@ -125,6 +126,24 @@
         </div>
     </div>
     <footer>copyright@alpha tech 2026</footer>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = navLinks.classList.toggle('open');
+                menuToggle.setAttribute('aria-expanded', isOpen);
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768 && navLinks.classList.contains('open')) {
+                    navLinks.classList.remove('open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+    </script>
 
 </body>
 
