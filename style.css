@@ -8,6 +8,7 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 html, body {
   overflow-x: hidden;
   width: 100%;
@@ -15,7 +16,6 @@ html, body {
   padding: 0;
   overflow-y: auto;
 }
-
 
 body {
   font-family: 'Inter', sans-serif;
